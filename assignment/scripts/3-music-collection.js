@@ -43,10 +43,24 @@ let collection= [];
 
   
 
+  // - Test the `showCollection` function.  Add a function named `findByArtist`. This function should:
 
+  function findByArtist(artist){    //string parameter artist
+    let artistList = [];  //array that holds results 
+    for( let item of collection){      //for of loop to iterate through collection
+      if(item.artist === artist){    
+        artistList.push(item); 
+      }
+    }
+    return (artistList);             
+}
 
+//testing the funtion 
+let result= findByArtist('morray'); 
+console.log(result);
 
-
+result= findByArtist('Huvley');
+console.log(result); 
 
 
 
@@ -70,6 +84,7 @@ let collection= [];
 //   ### Stretch goals
 
 // - Create a function called `search`. This function should:
+
 //   let result = [];  //call outside of the function 
 
 // function search(toSearch){

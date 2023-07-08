@@ -10,14 +10,44 @@ let collection= [];
       title: title, 
       artist: artist,
       yearPublished: yearPublished
-  }
+  };
   collection.push(albumns); 
   return (albumns); 
- 
-
   }
 
-  console.log(addToCollection('street sermons' ,  'morray' , '2021'))
+// - Add 6 albums to your collection.Console.log each album as added using the returned value.
+
+  console.log(addToCollection( 'street sermons' ,  'morray' , '2021'));
+  console.log(addToCollection( 'KOD' ,  'J. Cole' , '2018'));
+  console.log(addToCollection( 'Experiment' ,  'Kane Brown' , '2018'));
+  console.log(addToCollection( 'Sidist(VI)' ,  'Rophnan' , '2022'));
+  console.log(addToCollection( 'Ghetto Gospel' ,  'Rod Wave' , '2019'));
+  console.log(addToCollection( 'A Good Time' ,  'Davido' , '2019'));
+
+
+  //final collection array 
+
+  console.log(collection); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

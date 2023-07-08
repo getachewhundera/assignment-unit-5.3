@@ -30,6 +30,22 @@ let collection= [];
   console.log(collection); 
 
 
+  // - Add a function named `showCollection`.// - Loop over the array and console.log each album's information. 
+
+  function showCollection(array){
+    console.log('number of items in the array: ' + array.length);
+    for(i=0; i < array.length; i++){
+      console.log(array[i].title + " by " + array[i].artist  + ", published in " +  array[i].yearPublished );
+    }
+  }
+
+  showCollection(collection); 
+
+  
+
+
+
+
 
 
 
